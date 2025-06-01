@@ -272,14 +272,11 @@
   </div>
   </div>
 
-  <!-- Nút donate nổi -->
   <button id="donateBtn" title="donate"> ♡</button>
-
-  <!-- Dialog donate -->
   <div id="donateDialog">
     <div>
       <button id="closeDonateDialog" title="Đóng">×</button>
-      <h2>Ủng hộ tôi</h2>
+      <h2>Ủng hộ mình</h2>
       <img src="./qr.png" alt="QR Donate" />
       
       <p>Chào bạn cảm ơn bạn đã truy cập và ủng hộ mình 💌</p>
@@ -297,7 +294,7 @@
     closeDonateDialog.addEventListener('click', () => {
       donateDialog.classList.remove('active');
     });
-    // Click ra ngoài dialog để đóng
+    
     donateDialog.addEventListener('click', (e) => {
       if (e.target === donateDialog) {
         donateDialog.classList.remove('active');
